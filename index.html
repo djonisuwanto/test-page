@@ -1,10 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Test Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Foto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f0f0f0;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
 </head>
 <body>
-  <h1>Halo, ini halaman test!</h1>
-  <p>Selamat, GitHub Pages kamu berjalan!</p>
+  <h1>Galeri Foto Saya</h1>
+  <div class="gallery">
+    <!-- Ganti 'images/foto1.jpg' dengan nama file gambar kamu -->
+    <img src="images/foto1.jpg" alt="Foto 1">
+    <img src="images/foto2.jpg" alt="Foto 2">
+    <img src="images/foto3.jpg" alt="Foto 3">
+    <!-- Tambahkan lebih banyak gambar sesuai kebutuhan -->
+  </div>
 </body>
 </html>
